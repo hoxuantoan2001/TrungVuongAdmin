@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #2563eb;
+  --brand-hover: #1d4ed8;
+  --bg-main: #f8fafc;
+  --card-border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --success: #10b981;
+}
+
+* {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reference-style card */
+.fis-card {
+  background: white;
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.fis-card-hover:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.04);
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+/* Reference-style button */
+.btn-primary {
+  background: var(--brand);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--brand-hover);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-secondary {
+  background: white;
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.btn-secondary:hover {
+  background: #f1f5f9;
+}
